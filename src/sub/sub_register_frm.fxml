@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorForm" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="tf_title" layoutX="99.0" layoutY="20.0" prefHeight="35.0" prefWidth="370.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="270.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf_owner" layoutX="99.0" layoutY="66.0" prefHeight="35.0" prefWidth="97.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="66.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf_startdate" layoutX="100.0" layoutY="114.0" prefHeight="35.0" prefWidth="150.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="114.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf_clsdate" layoutX="298.0" layoutY="114.0" prefHeight="35.0" prefWidth="150.0" AnchorPane.leftAnchor="298.0" AnchorPane.topAnchor="114.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="tf_path" layoutX="99.0" layoutY="120.0" prefHeight="35.0" prefWidth="544.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn_open" layoutX="650.0" layoutY="120.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="70.0" text="開く" AnchorPane.leftAnchor="650.0" AnchorPane.topAnchor="160.0" />
+      <CheckBox fx:id="chk_A" layoutX="20.0" layoutY="170.0" mnemonicParsing="false" text="未着手" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="210.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chk_B" layoutX="142.0" layoutY="170.0" mnemonicParsing="false" text="途中" AnchorPane.leftAnchor="142.0" AnchorPane.topAnchor="210.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="chk_C" layoutX="250.0" layoutY="170.0" mnemonicParsing="false" text="終了" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="210.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </CheckBox>
+      <ComboBox fx:id="cmb_priority" layoutX="369.0" layoutY="169.0" prefHeight="31.0" prefWidth="110.0" AnchorPane.leftAnchor="370.0" AnchorPane.topAnchor="210.0" />
+      <TextArea fx:id="ta" layoutX="20.0" layoutY="248.0" prefHeight="365.0" prefWidth="706.0" AnchorPane.bottomAnchor="61.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="250.0" />
+      <Button fx:id="btn_add" layoutX="226.0" layoutY="621.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="125.0" text="登録" AnchorPane.bottomAnchor="14.0" />
+      <Button fx:id="btn_del" layoutX="402.0" layoutY="621.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="125.0" text="削除" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="402.0" />
+      <Button fx:id="btn_back" layoutX="664.0" layoutY="620.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="58.0" text="→" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="620.0">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="22.0" layoutY="24.0" prefHeight="35.0" prefWidth="79.0" text="タイトル" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="114.0" prefHeight="35.0" prefWidth="79.0" text="締切" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="114.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="20.0" layoutY="117.0" prefHeight="35.0" prefWidth="79.0" text="フォルダ" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="114.0" prefHeight="35.0" prefWidth="26.0" text="～" AnchorPane.leftAnchor="262.0" AnchorPane.topAnchor="114.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="25.0" layoutY="66.0" prefHeight="35.0" prefWidth="70.0" text="オーナー" AnchorPane.leftAnchor="20.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
