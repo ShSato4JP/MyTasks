@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf8"?>
+<persons>
+  <person>
+    <name>Branch</name>
+    <job>Programmer</job>
+  </person>
+  <person>
+    <name>CookieMonster</name>
+    <job>Monster</job>
+  </person>
+  <person>
+    <name>Crunky</name>
+    <job>Chocolate</job>
+    <HogeNode aaa="bbb">hello</HogeNode>
+    <HogeNode aaa="bbb">hello</HogeNode>
+  </person>
+</persons>

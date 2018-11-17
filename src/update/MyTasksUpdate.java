@@ -1,4 +1,4 @@
-package sub;
+package update;
 
 import java.io.IOException;
 import java.net.URL;
@@ -21,7 +21,7 @@ import javafx.stage.Stage;
 import javafx.stage.Window;
 import main.MyTasksRecord;
 
-public class MyTasksSub implements Initializable{
+public class MyTasksUpdate implements Initializable{
 
 	@FXML Button btn_open, btn_add, btn_del, btn_back;
 	@FXML TextField tf_title, tf_owner, tf_startdate, tf_clsdate, tf_path;
@@ -32,7 +32,7 @@ public class MyTasksSub implements Initializable{
 	private Stage subStage;
 	private MyTasksRecord mtRecord;
 
-	private MyTasksSub(Window prarentWindow) {
+	private MyTasksUpdate(Window prarentWindow) {
 
 		try {
 			FXMLLoader loader = new FXMLLoader(getClass().getResource("sub_register_frm.fxml"));
@@ -103,13 +103,13 @@ public class MyTasksSub implements Initializable{
 
 	/**新規登録モード**/
 	public static MyTasksRecord showAndGetMtData(Window parentWindow) {
-		MyTasksSub hoge = new MyTasksSub(parentWindow);
+		MyTasksUpdate hoge = new MyTasksUpdate(parentWindow);
 		return hoge.getResult();
 	}
 
 	/**データ編集モード**/
 	public static MyTasksRecord showAndEditMtData() {
-		MyTasksSub hoge = new MyTasksSub(null);
+		MyTasksUpdate hoge = new MyTasksUpdate(null);
 		return hoge.getResult();
 	}
 

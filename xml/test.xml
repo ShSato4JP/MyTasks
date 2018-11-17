@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="utf8"?>
-<persons>
-  <person>
-    <name>Branch</name>
-    <job>Programmer</job>
-  </person>
-  <person>
-    <name>CookieMonster</name>
-    <job>Monster</job>
-  </person>
-  <person>
-    <name>Crunky</name>
-    <job>Chocolate</job>
-    <HogeNode aaa="bbb">hello</HogeNode>
-  </person>
-  <person>tmp2</person>
-</persons>
+<tasks>
+  <taskno>
+    <title>test</title>
+    <owner>サトシ</owner>
+    <startdate>2018-11-13</startdate>
+    <clsdate>2018-11-18</clsdate>
+    <path>C:\hello\world</path>
+    <state>1</state>
+    <priority>2</priority>
+    <detail>テストデータです。</detail>
+  </taskno>
+  <taskno>
+  <taskno>
+    <title>test2</title>
+    <owner>ほか</owner>
+    <startdate>2118-11-13</startdate>
+    <clsdate>2118-11-18</clsdate>
+    <path></path>
+    <state>2</state>
+    <priority>3</priority>
+    <detail>テストデータ2です。</detail>
+  </taskno>
+  </taskno>
+</tasks>

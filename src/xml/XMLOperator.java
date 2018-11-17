@@ -9,7 +9,6 @@ import java.util.List;
 
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
-import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.dom4j.io.OutputFormat;
 import org.dom4j.io.SAXReader;
@@ -30,15 +29,16 @@ public class XMLOperator {
 	//新規Nodeの作成
 	public void addNode() throws DocumentException, IOException {
 		Element rootNode = XMLDoc.getRootElement();
-		List rootNodeList = rootNode.elements("person");
-		Element hoge = (Element) rootNodeList.get(rootNodeList.size() - 2);
+		List rootNodeList = rootNode.elements("taskno");
+
+		/*Element hoge = (Element) rootNodeList.get(rootNodeList.size() - 2);
 		Element hoge2 = hoge.addElement("HogeNode");
 		hoge2.setText("hello");
 		hoge2.addAttribute("aaa", "bbb");
 		Element tmp2 = DocumentHelper.createElement("person");//element作成
 		tmp2.setText("tmp2");
 		rootNodeList.add(tmp2);
-		writeXMLDoc();
+		writeXMLDoc();*/
 	}
 
 	public void updateNode() {

@@ -14,7 +14,7 @@ import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Window;
-import sub.MyTasksSub;
+import regist.MyTasksRegist;
 
 public class MyTasksController implements Initializable {
 	@FXML Button btn_add, btn_del;
@@ -31,7 +31,7 @@ public class MyTasksController implements Initializable {
 		btn_add.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
-				MyTasksRecord hoge = MyTasksSub.showAndGetMtData(anchorPane.getScene().getWindow());
+				MyTasksRecord hoge = MyTasksRegist.showAndGetMtData(anchorPane.getScene().getWindow());
 			}
 		});
 
